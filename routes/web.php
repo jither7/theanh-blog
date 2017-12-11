@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('/demo', 'DemoController');
+
+Route::get('/test', function(\App\Helpers\Contracts\RocketShipContractInterface $rocketShipContract) {
+    echo $rocketShipContract->blastOff();
+});
