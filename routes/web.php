@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/birthday', function () {
+    return view('birthday');
+});
+
+Route::get('/countdown', function () {
+    return view('countdown');
+});
