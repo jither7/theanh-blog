@@ -33,6 +33,7 @@
             font-size: 4.5rem;
         }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         const second = 1000,
             minute = second * 60,
@@ -57,20 +58,23 @@
                 //}
 
             }, second);
-        let heightScreen = $(window).height();
-        let marginTop = (heightScreen - 195) / 2;
-        document.getElementsByClassName("container").style.marginTop = (marginTop - 195) / 2 + "px";
+        $(document).ready(function () {
+            let heightScreen = $(window).height();
+            let marginTop = (heightScreen - 195) / 2 - 100;
+            $(".container").css("margin-top", marginTop + "px");
+        });
+
     </script>
 </head>
 <body>
-    <div id="container" class="container">
-        <h1 id="head">Countdown to your birthday:</h1>
-        <ul>
-            <li><span id="days"></span>days</li>
-            <li><span id="hours"></span>Hours</li>
-            <li><span id="minutes"></span>Minutes</li>
-            <li><span id="seconds"></span>Seconds</li>
-        </ul>
-    </div>
+<div id="container" class="container">
+    <h1 id="head">Countdown to your birthday:</h1>
+    <ul>
+        <li><span id="days"></span>days</li>
+        <li><span id="hours"></span>Hours</li>
+        <li><span id="minutes"></span>Minutes</li>
+        <li><span id="seconds"></span>Seconds</li>
+    </ul>
+</div>
 </body>
 </html>
