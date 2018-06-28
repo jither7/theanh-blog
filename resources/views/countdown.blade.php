@@ -56,7 +56,10 @@
                 //  'IT'S MY BIRTHDAY!;
                 //}
 
-            }, second)
+            }, second);
+        let heightScreen = $(window).height();
+        let marginTop = (heightScreen - 195) / 2;
+        $('.container').style.marginTop = marginTop + "px";
     </script>
 </head>
 <body>
