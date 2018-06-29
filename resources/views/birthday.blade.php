@@ -7,6 +7,8 @@
             font-family:'Wendy One', sans-serif;
         }
 
+        canvas{display:block}
+
         body {
             background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #374566), color-stop(100%, #010203));
             background-image: -webkit-radial-gradient(#374566, #010203);
@@ -270,24 +272,26 @@
             font-size: 3.5em;
         }
     </style>
-    <script>
-        window.open = function() {};
-        window.print = function() {};
-        // Support hover state for mobile.
-        if (false) {
-            window.ontouchstart = function() {};
-        }
-    </script>
+
     <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
     <meta content="clickberry-extension-here">
     <meta content="clickberry-extension-here">
     <style type="text/css"></style>
     <style type="text/css"></style>
-    <style type="text/css"></style><style type="text/css"></style><script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script><meta content="clickberry-extension-here"></head>
+    <style type="text/css"></style>
+    <style type="text/css"></style>
+    <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
+    <meta content="clickberry-extension-here">
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css">
+
+</head>
 
 <body>
-<link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css">
-<div class="container">
+<canvas id="birthday">
+
+
+</canvas>
+<div class="container" style="margin-top: -850px">
     <div class="balloon">
         <div><span>☺</span>
         </div>
@@ -303,8 +307,7 @@
         </div>
     </div>
     <h1>Happy Birthday...</h1>
-
-
+    <script src="js.js"></script>
 </div>
 <script>
 
@@ -316,4 +319,5 @@
 </script>
 
 
-</body></html>
+</body>
+</html>
