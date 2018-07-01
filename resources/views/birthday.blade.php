@@ -291,7 +291,7 @@
 
 
 </canvas>
-<div class="container" style="margin-top: -850px">
+<div class="container" style="margin-top: -750px">
     <div class="balloon">
         <div><span>☺</span>
         </div>
@@ -307,7 +307,12 @@
         </div>
     </div>
     <h1>Happy Birthday...</h1>
-    <script src="js.js"></script>
+    <audio id="audio"
+           src="{{ asset("sound/I-Love-You-Only-C-Only-C.mp3") }}"
+           type="audio/mpeg">
+    </audio>
+    <button id="nyan-btn">Play / Pause</button>
+    <script type="text/javascript" src="{{ asset('js/birthday.js') }}"></script>
 </div>
 <script>
 

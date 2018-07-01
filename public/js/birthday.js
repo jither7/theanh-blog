@@ -6,6 +6,22 @@ if (false) {
     window.ontouchstart = function() {};
 }
 
+let song = document.getElementById("song");
+let nyanBtn = document.getElementById("nyan-btn");
+
+function playPause(song) {
+    if (song.paused && song.currentTime >= 0 && !song.ended) {
+        song.play();
+    } else {
+        song.paused();
+    }
+}
+
+nyanBtn.addEventListener('click', function () {
+    playPause(song);
+});
+
+
 const PI2 = Math.PI * 2
 let random = (min, max) => Math.random() * (max - min + 1) + min | 0;
 
