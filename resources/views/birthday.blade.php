@@ -271,6 +271,13 @@
             color: white;
             font-size: 3.5em;
         }
+        img {
+            -ms-transform: rotate(20deg); /* IE 9 */
+            -webkit-transform: rotate(20deg); /* Safari 3-8 */
+            transform: rotate(20deg);
+            margin-left: -250px;
+            margin-top: 20px;
+        }
     </style>
 
     <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
@@ -283,7 +290,6 @@
     <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
     <meta content="clickberry-extension-here">
     <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css">
-
 </head>
 
 <body>
@@ -292,6 +298,7 @@
 
 </canvas>
 <div class="container" style="margin-top: -750px">
+    <img width="200" style="float:left; " src="{{asset('images/trangle.jpg')}}" alt="">
     <div class="balloon">
         <div><span>☺</span>
         </div>
@@ -307,16 +314,21 @@
         </div>
     </div>
     <h1>Happy Birthday...</h1>
-    <audio id="audio"
-           src="{{ asset("sound/I-Love-You-Only-C-Only-C.mp3") }}"
-           type="audio/mpeg">
+    <div style="margin-top:250px; text-align: center">
+
+        <div style="color: white; margin-left: 40px">
+            <p>Cuộc sống là những gian khổ ta sẽ cùng nhau trải qua. </p>
+            <p>Hãy luôn giữ nụ cười trên môi để chúng ta cùng nhau bước tiếp.</p>
+            <p>Và... vì anh cũng rất yêu nụ cười đó của em!</p>
+        </div>
+    </div>
+
+    <audio id="audio" autoplay loop>
+           <source src="{{ asset("sound/I-Love-You-Only-C-Only-C.mp3") }}" type="audio/mpeg">
     </audio>
-    <button id="nyan-btn">Play / Pause</button>
     <script type="text/javascript" src="{{ asset('js/birthday.js') }}"></script>
 </div>
-<script>
 
-</script>
 <script>
     if (document.location.search.match(/type=embed/gi)) {
         window.parent.postMessage('resize', "*");
