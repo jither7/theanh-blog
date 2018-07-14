@@ -20,5 +20,10 @@ Route::get('/birthday', function () {
 });
 
 Route::get('/countdown', function () {
+    $now = strtotime('now');
+    $birthday = strtotime('2018-07-15 00:00:00');
+    if ($now >= $birthday) {
+        return redirect('/birthday');
+    }
     return view('countdown');
 });
