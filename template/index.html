@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <script src="assets/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+</head>
+<body>
+    <div class="page">
+        <header class="top-header-bar-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="top-header-bar">
+                            <li class="top-email">
+                                <i class="fa fa-envelope-o"></i>
+                                phamtheanh@gmail.com
+                            </li>
+                            <li class="top-cart">
+                                <a href="#">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    My cart
+                                    <span class="price">74.00</span>
+                                </a>
+                            </li>
+                            <li class="top-account">
+                                <i class="fa fa-user"></i>
+                                Account
+                            </li>
+                            <li class="top-search">
+                                <form role="search" method="get" class="pull-right" id="searchform_topbar" action="">
+                                    <label>
+                                        <span class="screen-reader-text"></span>
+                                        <input type="search" class="search-field-top-bar" id="search-field-top-bar" placeholder="Search...">
+                                    </label>
+                                    <button id="search-top-bar-submit" type="submit" class="search-top=bar-submit">
+                                        <span class="fa fa-search"></span>
+                                    </button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header id="masthead" class="site-header" role="banner">
+            <div class="site-branding container">
+                <div class="row">
+                    <div class="col-sm-4 header-logo">
+                        <a href="#" class="custom-logo-link" rel="home" itemprop="url">
+                            <img src="assets/images/logo.png" height="70" width="150"/></a>
+                    </div>
+                </div>
+            </div>
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul id="desktop-menu" class="sf-menu">
+                                <li itemscope="itemscope" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current-page item item-menu-home active">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a href="#">Shop</a>
+                                </li>
+                                <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li itemscope="itemscope" class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="main-slider">
+            <div class="owl-carousel owl-theme owl-loaded owl-drag" id="main-slider">
+                <div class="owl-stage">
+                    <div class="owl-item cloned" style="width: 1905px;">
+                        <div class="item">
+                            <img src="assets/images/hero.jpg" height="545" width="1600"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
